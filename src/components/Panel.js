@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../style.css';
+import './Panel.css';
 
 export default function Panel(props) {
   const [ranWord, setRanWord] = useState('');

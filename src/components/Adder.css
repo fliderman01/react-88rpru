@@ -1,0 +1,21 @@
+/* Add DeleteAll button wrapper */
+.wrapAddDel {
+  display: flex;
+  justify-content: center;
+}
+/* add button */
+.addBtn {
+  width: 2em;
+  height: 2em;
+  font-size: 24px;
+  margin: 0.4em;
+  border-radius: 50em;
+}
+/* delete All button */
+.delAll {
+  width: 2em;
+  height: 2em;
+  font-size: 24px;
+  border-radius: 50em;
+  margin: 0.4em;
+}

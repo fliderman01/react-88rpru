@@ -1,0 +1,23 @@
+/* game panel */
+.panelDiv {
+  outline: 1px solid purple;
+  padding: 5px;
+  margin: 0.5em;
+}
+/* wraps add & delete buttons */
+.panelTop {
+  display: flex;
+  justify-content: space-between;
+}
+/* delete button */
+.delBtn {
+  width: 2.5em;
+  height: 2em;
+  margin-left: 90%;
+  border-radius: 50em;
+}
+@media screen and (max-width: 425px) {
+  .delBtn {
+    margin-left: 65%;
+  }
+}
