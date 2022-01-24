@@ -10,6 +10,10 @@ export default function App() {
     const initialValue = JSON.parse(saved);
     return initialValue || [];
   });
+  // Save/update panel value in local Storage (on render)
+  useEffect(() => {
+    localStorage.setItem('panel', JSON.stringify(panel));
+  });
   // add new panel
   const addNew = () => {
     setPanel([
@@ -19,10 +23,6 @@ export default function App() {
       },
     ]);
   };
-  // Save/update panel value in local Storage (on render)
-  useEffect(() => {
-    localStorage.setItem('panel', JSON.stringify(panel));
-  });
   // delete individual panel
   const delPanel = (id) => {
     const remainingPanels = panel.filter((item) => id !== item.id);
